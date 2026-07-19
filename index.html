@@ -1,25 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-<title>M3U8视频播放器</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/player.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free M3U8 Player Online – Play HLS Streams | ToolsBox</title>
+  <meta name="description" content="Play M3U8 and HLS streams online for free. Paste a stream URL for instant playback with quality switching, picture-in-picture, speed controls, and fullscreen." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://m3u8.toolsbox.vip/" />
+  <link rel="alternate" hreflang="en" href="https://m3u8.toolsbox.vip/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://m3u8.toolsbox.vip/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://m3u8.toolsbox.vip/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Free M3U8 Player Online – Play HLS Streams" />
+  <meta property="og:description" content="Paste an M3U8 URL and test HLS playback instantly in your browser." />
+  <meta property="og:url" content="https://m3u8.toolsbox.vip/" />
+  <link rel="stylesheet" href="/css/player.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "M3U8 ToolsBox Player",
+    "url": "https://m3u8.toolsbox.vip/",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Any",
+    "description": "A free browser-based M3U8 and HLS stream player.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
 <body>
-<div class="main ready">
-	<div class="player">loading...</div>
-	<div class="logo">M3U8视频播放器</div>
-	<form class="form-control">
-		<input class="url" type="text" placeholder="请输入m3u8视频网址" value="" />
-		<input class="play" type="submit" value="" title="点击播放" />
-	</form>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/layer/layer.min.js"></script>
-<script src="js/artplayer/artplayer.js"></script>
-<script src="js/artplayer/artplayer-plugin-control.js"></script>
-<script src="js/artplayer/hls.min.js"></script>
-<script src="js/artplayer/artplayer-plugin-hls-quality.js"></script>
-<script src="js/player.js"></script>
+  <main class="main ready">
+    <nav class="language-nav" aria-label="Language"><a href="/zh/" lang="zh-CN">中文</a></nav>
+    <div class="player">loading...</div>
+    <h1 class="logo">Free M3U8 Player Online</h1>
+    <p class="tagline">Play and test HLS live streams or video playlists directly in your browser.</p>
+    <form class="form-control">
+      <label class="sr-only" for="stream-url">M3U8 stream URL</label>
+      <input id="stream-url" class="url" type="url" inputmode="url" autocomplete="off" placeholder="Enter an M3U8 stream URL" value="" />
+      <input class="play" type="submit" value="" title="Play stream" aria-label="Play stream" />
+    </form>
+  </main>
+
+  <section class="seo-content" aria-label="M3U8 player guide">
+    <div class="content-block">
+      <h2>Online M3U8 and HLS stream player</h2>
+      <p>Use this free online player to open a public M3U8 playlist without installing desktop software. The stream is requested directly by your browser and the URL is not uploaded to this site.</p>
+      <div class="feature-list">
+        <article><h3>Adaptive quality</h3><p>Switch between quality levels provided by the HLS master playlist.</p></article>
+        <article><h3>Playback controls</h3><p>Use speed, aspect ratio, screenshot, picture-in-picture, and fullscreen controls.</p></article>
+        <article><h3>Live and on-demand</h3><p>Test compatible HLS live streams and video-on-demand playlists.</p></article>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>How to play an M3U8 URL</h2>
+      <ol class="steps">
+        <li><strong>Copy the URL</strong><span>Use an HTTPS M3U8 link you own or have permission to access.</span></li>
+        <li><strong>Paste the link</strong><span>Enter the direct playlist address in the field above.</span></li>
+        <li><strong>Start playback</strong><span>Check video, audio, quality levels, seeking, and fullscreen.</span></li>
+      </ol>
+    </div>
+
+    <div class="content-block">
+      <h2>M3U8 player FAQ</h2>
+      <div class="faq-list">
+        <details><summary>What is an M3U8 file?</summary><p>An M3U8 file is a UTF-8 HLS playlist that points to video segments and may contain multiple quality levels.</p></details>
+        <details><summary>Why does a stream fail to play?</summary><p>Common causes include CORS restrictions, an expired URL, mixed HTTP content, unsupported codecs, encryption, DRM, or referrer protection.</p></details>
+        <details><summary>Does the player store my stream URL?</summary><p>No. Playback happens in your browser. The source server still controls access and cross-origin permissions.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© 2026 m3u8.toolsbox.vip</span>
+    <div><a href="/zh/" lang="zh-CN">中文</a><a href="/sitemap.xml">Sitemap</a></div>
+  </footer>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/layer/layer.min.js"></script>
+  <script src="/js/artplayer/artplayer.js"></script>
+  <script src="/js/artplayer/artplayer-plugin-control.js"></script>
+  <script src="/js/artplayer/hls.min.js"></script>
+  <script src="/js/artplayer/artplayer-plugin-hls-quality.js"></script>
+  <script src="/js/player.js"></script>
 </body>
 </html>

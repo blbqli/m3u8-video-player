@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M3U8 在线播放器 – 免费播放、测试 HLS 直播流与视频链接 | ToolsBox</title>
+  <meta name="description" content="免费使用 M3U8 在线播放器测试 HLS 直播和点播地址。无需安装软件，粘贴视频流链接即可播放，并支持清晰度切换、画中画、截图、倍速和全屏功能。" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://m3u8.toolsbox.vip/zh/" />
+  <link rel="alternate" hreflang="en" href="https://m3u8.toolsbox.vip/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://m3u8.toolsbox.vip/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://m3u8.toolsbox.vip/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="M3U8 在线播放器 – 免费测试 HLS 视频流" />
+  <meta property="og:description" content="粘贴 M3U8 地址即可在浏览器中测试 HLS 播放，无需安装软件。" />
+  <meta property="og:url" content="https://m3u8.toolsbox.vip/zh/" />
+  <link rel="stylesheet" href="/css/player.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "M3U8 ToolsBox 在线播放器",
+    "url": "https://m3u8.toolsbox.vip/zh/",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Any",
+    "description": "免费的 M3U8 和 HLS 浏览器在线播放器。",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" }
+  }
+  </script>
+</head>
+<body>
+  <main class="main ready">
+    <nav class="language-nav" aria-label="语言"><a href="/" lang="en">English</a></nav>
+    <div class="player">loading...</div>
+    <h1 class="logo">M3U8 在线播放器</h1>
+    <p class="tagline">在浏览器中免费播放和测试 HLS 直播流或点播列表。</p>
+    <form class="form-control">
+      <label class="sr-only" for="stream-url">M3U8 视频流地址</label>
+      <input id="stream-url" class="url" type="url" inputmode="url" autocomplete="off" placeholder="请输入 M3U8 视频流地址" value="" />
+      <input class="play" type="submit" value="" title="开始播放" aria-label="开始播放" />
+    </form>
+  </main>
+
+  <section class="seo-content" aria-label="M3U8 播放器使用指南">
+    <div class="content-block">
+      <h2>M3U8 与 HLS 在线播放器</h2>
+      <p>使用这个免费在线工具打开公开的 M3U8 播放列表，无需安装桌面软件。视频流由浏览器直接请求，本站不会上传或保存你输入的视频地址。</p>
+      <div class="feature-list">
+        <article><h3>自适应清晰度</h3><p>读取 HLS 主播放列表提供的清晰度，并在播放器中切换。</p></article>
+        <article><h3>常用播放控制</h3><p>支持倍速、画面比例、截图、画中画和全屏等功能。</p></article>
+        <article><h3>直播与点播</h3><p>可以测试浏览器兼容的 HLS 直播流和视频点播列表。</p></article>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>如何播放 M3U8 地址</h2>
+      <ol class="steps">
+        <li><strong>复制视频地址</strong><span>使用自己拥有或获得授权的 HTTPS M3U8 链接。</span></li>
+        <li><strong>粘贴播放链接</strong><span>将播放列表直链输入上方地址框。</span></li>
+        <li><strong>开始播放测试</strong><span>检查画面、声音、清晰度、进度跳转和全屏功能。</span></li>
+      </ol>
+    </div>
+
+    <div class="content-block">
+      <h2>M3U8 在线播放器常见问题</h2>
+      <div class="faq-list">
+        <details><summary>M3U8 是什么文件？</summary><p>M3U8 是使用 UTF-8 编码的 HLS 播放列表，其中记录视频分片地址，也可以包含多个不同清晰度。</p></details>
+        <details><summary>视频流为什么无法播放？</summary><p>常见原因包括跨域限制、链接过期、HTTP 混合内容、编码不兼容、加密、DRM 或防盗链限制。</p></details>
+        <details><summary>播放器会保存视频地址吗？</summary><p>不会。视频流由浏览器直接请求，但源服务器仍然可以设置访问权限和跨域限制。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© 2026 m3u8.toolsbox.vip</span>
+    <div><a href="/" lang="en">English</a><a href="/sitemap.xml">站点地图</a></div>
+  </footer>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/layer/layer.min.js"></script>
+  <script src="/js/artplayer/artplayer.js"></script>
+  <script src="/js/artplayer/artplayer-plugin-control.js"></script>
+  <script src="/js/artplayer/hls.min.js"></script>
+  <script src="/js/artplayer/artplayer-plugin-hls-quality.js"></script>
+  <script src="/js/player.js"></script>
+</body>
+</html>

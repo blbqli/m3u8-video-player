@@ -16,4 +16,34 @@ body { background: #235; margin: 0; padding: 0; }
 @media screen and (max-width: 640px) { 
 	.logo { font-size: 30px; }
 	.ready .form-control { width: 90%; padding-top: 5vh; }
-} 
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.language-nav { display: none; justify-content: flex-end; gap: 12px; padding: 16px 20px 0; }
+.language-nav a { color: #c9daf5; font: 700 14px "Trebuchet MS", sans-serif; text-decoration: none; }
+.ready .language-nav { display: flex; }
+.logo { margin: 0; }
+.tagline { display: none; max-width: 680px; margin: 18px auto 0; padding: 0 20px; color: #c9daf5; text-align: center; font: 18px/1.6 "Trebuchet MS", sans-serif; }
+.ready .tagline { display: block; }
+.seo-content { display: flex; flex-direction: column; gap: 56px; padding: 72px max(20px, calc((100% - 1000px) / 2)); background: #f4f0e8; color: #172733; font-family: "Trebuchet MS", sans-serif; }
+.content-block { display: flex; flex-direction: column; gap: 22px; }
+.content-block h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; }
+.content-block h3, .content-block p { margin: 0; }
+.content-block > p { max-width: 780px; color: #53646e; font-size: 17px; line-height: 1.8; }
+.feature-list, .steps { display: flex; flex-wrap: wrap; gap: 1px; margin: 0; padding: 1px; background: #cfc7b8; }
+.feature-list article, .steps li { min-width: 230px; flex: 1 1 30%; display: flex; flex-direction: column; gap: 10px; padding: 24px; background: #f4f0e8; }
+.feature-list p, .steps span, .faq-list p { color: #53646e; line-height: 1.7; }
+.faq-list { display: flex; flex-direction: column; gap: 1px; padding: 1px; background: #cfc7b8; }
+.faq-list details { padding: 0 22px; background: #f4f0e8; }
+.faq-list summary { padding: 20px 0; cursor: pointer; font-weight: 700; }
+.faq-list p { padding: 0 0 20px; }
+.site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 24px max(20px, calc((100% - 1000px) / 2)); background: #172733; color: #c9daf5; font: 14px "Trebuchet MS", sans-serif; }
+.site-footer div { display: flex; gap: 18px; }
+.site-footer a { color: #fff; }
+
+@media screen and (max-width: 640px) {
+	.tagline { font-size: 15px; }
+	.seo-content { gap: 42px; padding-top: 52px; padding-bottom: 52px; }
+	.feature-list article, .steps li { flex-basis: 100%; }
+	.site-footer { align-items: flex-start; flex-direction: column; }
+}

@@ -72,11 +72,11 @@ var playVideo = (videoUrl) => {
 				text: '欢迎使用m3u8播放器',
 			}],
 			icons: {
-				loading: '<img src="images/loading.gif" width="100px" title="视频加载中..." />'
+				loading: '<img src="/images/loading.gif" width="100px" title="视频加载中..." />'
 			},
 			settings: [{
 				html: '控件栏浮动',
-				icon: '<img width="22" heigth="22" src="images/state.svg">',
+				icon: '<img width="22" heigth="22" src="/images/state.svg">',
 				tooltip: '开启',
 				switch: true,
 				onSwitch: async (item) => {
