@@ -21,6 +21,8 @@ body { background: #235; margin: 0; padding: 0; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .language-nav { display: none; justify-content: flex-end; gap: 12px; padding: 16px 20px 0; }
 .language-nav a { color: #c9daf5; font: 700 14px "Trebuchet MS", sans-serif; text-decoration: none; }
+.language-nav .support-link { padding: 6px 10px; border: 1px solid #9bd; border-radius: 4px; background: #123; color: #fff; }
+.language-nav .support-link:hover, .language-nav .support-link:focus-visible { border-color: #fff; background: #012; }
 .ready .language-nav { display: flex; }
 .logo { margin: 0; }
 .tagline { display: none; max-width: 680px; margin: 18px auto 0; padding: 0 20px; color: #c9daf5; text-align: center; font: 18px/1.6 "Trebuchet MS", sans-serif; }
